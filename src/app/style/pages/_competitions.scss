@@ -1,0 +1,30 @@
+.competitions{
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.competition{
+  box-sizing: border-box;
+  background-color: $blue;
+  width: calc(33.33% - 2rem);
+  margin-bottom: 1rem;
+  height: 15rem;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow: hidden;
+  h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $lightPink;
+  }
+  h3{
+    font-size: 1rem;
+    font-weight: 400;
+    color: $lightPink;
+  }
+
+}

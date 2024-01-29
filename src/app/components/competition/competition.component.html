@@ -1,0 +1,9 @@
+<div class="competitions">
+  <div class="competition" *ngFor="let competition of competitions | async ">
+    <h1>{{competition.code}}</h1>
+    <h2>{{competition.date}}</h2>
+    <h3>{{competition.startTime}} To {{competition.endTime}}</h3>
+    <h3>{{competition.location}}</h3>
+    <h2>{{competition.participantsNum}}</h2>
+  </div>
+</div>

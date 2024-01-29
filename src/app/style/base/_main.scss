@@ -1,0 +1,23 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  box-sizing: border-box;
+  font-family: $text-font;
+  background-color: $beige;
+}
+
+button{
+  cursor: pointer;
+}
+
+.all{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

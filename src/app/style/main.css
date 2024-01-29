@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: #FBF9F1;
+}
+
+button {
+  cursor: pointer;
+}
+
+.all {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchBar {
+  display: none;
+}
+.searchBar form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchBar input {
+  background-color: transparent;
+  border: 3px solid #0b356c;
+  height: 36px;
+  width: 18rem;
+  border-radius: 4px 0px 0px 4px;
+  border-right: none;
+  padding: 8px;
+}
+.searchBar input:focus {
+  border: none;
+  background-color: transparent;
+}
+.searchBar button {
+  border: 3px solid #0b356c;
+  border-radius: 0px 4px 4px 0px;
+  padding: 4px;
+  background-color: transparent;
+}
+.searchBar button img {
+  width: 23px;
+}
+
+table {
+  width: 100%;
+  background-color: #FBF9F1;
+  border-collapse: collapse;
+  border-radius: 7px;
+  overflow: hidden;
+}
+table .tableHead {
+  background-color: #92C7CF;
+  border-radius: 0px 0px 5px 5px;
+}
+table tr {
+  border-bottom: 3px solid #FBF9F1;
+}
+table th {
+  font-size: 1.5rem;
+  color: #E5E1DA;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+table th, table td {
+  border: none;
+  padding: 15px;
+  text-align: left;
+}
+table button {
+  padding: 8px;
+  background-color: #E5E1DA;
+  color: #F8F0E5;
+  border-radius: 3px;
+  border: none;
+  width: 11rem;
+  float: inline-end;
+  margin-left: -10rem;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  margin: 1rem;
+}
+.bar a {
+  text-decoration: none;
+  color: #0b356c;
+}
+.bar button {
+  background: none;
+  border: solid transparent 2px;
+  border-radius: 1px;
+  padding: 5px;
+  transition: 0.5s;
+}
+.bar button:hover {
+  border-bottom: solid #0b356c 2px;
+}
+
+.content {
+  width: 90vw;
+  height: 90vh;
+}
+
+.competitions {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.competition {
+  box-sizing: border-box;
+  background-color: #92C7CF;
+  width: calc(33.33% - 2rem);
+  margin-bottom: 1rem;
+  height: 15rem;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.competition h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #E5E1DA;
+}
+.competition h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #E5E1DA;
+}
+
+/*# sourceMappingURL=main.css.map */
