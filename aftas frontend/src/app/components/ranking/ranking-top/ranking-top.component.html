@@ -1,0 +1,40 @@
+<app-navbar></app-navbar>
+<div class="container mt-5 mb-5">
+    <div class="d-flex gap-3 align-items-center mb-5">
+      <h3 class="fw-bold text-color pb-3 mb-3">Top 3 Rankings for Competition {{ competitionId == 0 ? ' ': competitionId }}</h3>
+    </div>
+    <h5 class="fw-bold pb-3 mb-3">To discover the winning participants, kindly select a competition from the available options.</h5>
+    <img [src]="imageRa" class="mb-4" alt="ranking">
+    <div class="d-flex gap-5 align-items-center mb-4">
+      <div class="d-flex align-items-center gap-5 me-3">
+        <label for="competitionSelect" class="form-label">Select Competition:</label>
+        <select id="competitionSelect" class="form-select" [(ngModel)]="competitionId" (change)="onCompetitionChange()">
+          <option *ngFor="let competition of competitions" [value]="competition.id">
+            {{ competition.code }}
+          </option>
+        </select>
+      </div>
+    </div>
+
+    <div class="containerRank podium d-flex justify-content-center mt-5" *ngIf="topRankings.length > 0">
+      <div class="podium__item">
+        <p class="podium__city mb-2">{{ topRankings[1].member.name }} {{ topRankings[1].member.familyName }}</p>
+        <div class="score text-center mb-3">{{ topRankings[1].score }}</div>
+        <div class="podium__rank second">2</div>
+      </div>
+      <div class="podium__item">
+        <p class="podium__city mb-2">{{ topRankings[0].member.name }} {{ topRankings[0].member.familyName }}</p>
+        <div class="score text-center mb-3">{{ topRankings[0].score }}</div>
+        <div class="podium__rank first">
+          <p class="podium__number" >1</p>
+        </div>
+    </div>
+      <div class="podium__item">
+        <p class="podium__city mb-2">{{ topRankings[2].member.name }} {{ topRankings[2].member.familyName }}</p>
+        <div class="score text-center mb-3">{{ topRankings[2].score }}</div>
+        <div class="podium__rank third">3</div>
+      </div>
+    </div>
+    
+  </div>
+  
